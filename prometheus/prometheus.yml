@@ -50,3 +50,9 @@ scrape_configs:
     file_sd_configs:
       - files:
         - '/etc/prometheus/targets/node/webinar-host04/*.json'
+
+  - job_name: '7a.lab.int'
+    static_configs:
+      - targets: ['7a.lab.int:9100']
+        labels:
+          host: 7a
